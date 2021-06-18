@@ -1,5 +1,5 @@
-#ifndef SNAKE_HPP
-# define SNAKE_HPP
+#ifndef PLAYER_HPP
+# define PLAYER_HPP
 
 enum Dir {
 	STOP = 0,
@@ -9,7 +9,7 @@ enum Dir {
 	DOWN
 };
 
-class Snake
+class Player
 {
 private:
 	int x;
@@ -20,7 +20,8 @@ private:
 	int num_tail;
 
 public:
-	Snake();
+	bool dash;
+	Player();
 	
 	void set_x(int _x);
 	void set_y(int _y);

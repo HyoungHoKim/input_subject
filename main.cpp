@@ -11,7 +11,9 @@ void Initalize()
 
 int main(void)
 {
-	GameMode gamemode(20, 40);
+	GameMode gamemode(75, 22);
+
+	Initalize();
 
 	while (!gamemode.get_game_over())
 	{
